@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MADE Submission</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="favorite">Favorite</string>
+    <string name="cannot_load_content">Oops.. Cannot load content</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="module_not_found">Module not found…</string>
+    <string name="information">Information</string>
+    <string name="details">Details</string>
+    <string name="delete_from_favorite">Delete %s from Favorite?</string>
+</resources>
