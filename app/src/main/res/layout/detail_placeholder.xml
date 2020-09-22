@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/placeholderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorBackground"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="@color/colorBackground"
+        android:text="@string/fantastic_beasts"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/informationCard"
+        style="@style/CardView.Big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeholderTitle"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/informationPlaceHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/information"
+                android:textColor="@color/colorBackground"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardVoteAverage"
+                style="@style/CardView.Small.PlaceHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/informationPlaceHolder"
+                android:backgroundTint="@color/colorBackground">
+
+                <TextView
+                android:id="@+id/detailVoteAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:textColor="@color/colorBackground"
+                android:drawablePadding="8dp"
+                android:text="@string/_86" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardPopularity"
+                style="@style/CardView.Small.PlaceHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/informationPlaceHolder"
+                android:layout_toEndOf="@id/cardVoteAverage"
+                android:backgroundTint="@color/colorBackground">
+
+                <TextView
+                    android:id="@+id/placeholderPopularity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBackground"
+                    android:text="@string/_100_000"
+                    android:gravity="center" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardReleaseDate"
+                style="@style/CardView.Small.PlaceHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardVoteAverage"
+                android:backgroundTint="@color/colorBackground"
+                app:contentPadding="4dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/placeholderRelease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:textColor="@color/colorBackground"
+                        android:text="@string/november_21_2020" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardGenre"
+                style="@style/CardView.Small.PlaceHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardReleaseDate"
+                android:backgroundTint="@color/colorBackground">
+
+                <TextView
+                    android:id="@+id/placeholderGenre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:textColor="@color/colorBackground"
+                    android:text="@string/action_adventure_drama_comedy" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardRuntime"
+                style="@style/CardView.Small.PlaceHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardVoteAverage"
+                android:layout_toEndOf="@id/cardReleaseDate"
+                android:backgroundTint="@color/colorBackground">
+
+                <TextView
+                    android:id="@+id/placeholderRuntime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBackground"
+                    android:maxLines="1"
+                    android:text="@string/_100" />
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/overviewCard"
+        style="@style/CardView.Big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/informationCard"
+        android:layout_marginTop="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/overviewTextPlaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/overview"
+                android:textColor="@color/colorBackground"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/placeholderTagLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/overviewTextPlaceholder"
+                android:layout_margin="4dp"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="italic"
+                android:background="@color/colorBackground"
+                tools:text="An entire universe. Once and for all." />
+
+            <TextView
+                android:id="@+id/placeholderDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/placeholderTagLine"
+                android:layout_margin="4dp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorBackground"
+                tools:text="As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain." />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
