@@ -20,9 +20,19 @@
         <item name="android:layout_margin">4dp</item>
     </style>
 
+    <style name="CardView.Small.PlaceHolder" parent="CardView">
+        <item name="contentPadding">8dp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
     <style name="CardView.Big" parent="CardView">
         <item name="contentPadding">16dp</item>
         <item name="cardCornerRadius">16dp</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="CardView.Big.PlaceHolder" parent="CardView">
+        <item name="contentPadding">16dp</item>
         <item name="android:backgroundTint">@color/colorPrimary</item>
     </style>
 </resources>

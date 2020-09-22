@@ -8,4 +8,10 @@
     <string name="information">Information</string>
     <string name="details">Details</string>
     <string name="delete_from_favorite">Delete %s from Favorite?</string>
+    <string name="_86">86</string>
+    <string name="fantastic_beasts">Fantastic Beasts</string>
+    <string name="_100_000">100.000</string>
+    <string name="action_adventure_drama_comedy">Action,Adventure,Drama,Comedy</string>
+    <string name="_100">100</string>
+    <string name="november_21_2020">November 21, 2020</string>
 </resources>

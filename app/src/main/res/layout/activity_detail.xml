@@ -61,12 +61,20 @@
             android:layout_height="match_parent"
             android:padding="16dp">
 
-            <ProgressBar
+            <com.facebook.shimmer.ShimmerFrameLayout
                 android:id="@+id/detailBar"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                />
+                app:shimmer_auto_start="true"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <include layout="@layout/detail_placeholder"/>
+                </ScrollView>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
             <RelativeLayout
                 android:id="@+id/detailView"
                 android:layout_width="match_parent"
