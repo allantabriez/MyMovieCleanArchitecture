@@ -1,8 +1,6 @@
 package com.example.madesubmission.core.utils
 
 import android.util.Log
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import com.example.madesubmission.core.data.source.local.entity.MovieEntity
 import com.example.madesubmission.core.data.source.remote.response.DetailResponse
 import com.example.madesubmission.core.data.source.remote.response.MovieResponse

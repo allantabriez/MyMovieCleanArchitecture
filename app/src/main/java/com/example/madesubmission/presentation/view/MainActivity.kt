@@ -3,7 +3,6 @@ package com.example.madesubmission.presentation.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
@@ -12,8 +11,6 @@ import com.example.madesubmission.R
 import com.example.madesubmission.core.domain.model.Movie
 import com.example.madesubmission.presentation.viewmodel.MainViewModel
 import com.example.madesubmission.core.ui.RecyclerViewAdapter
-import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
-import com.google.android.play.core.splitinstall.SplitInstallRequest
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
 import org.koin.android.viewmodel.ext.android.viewModel

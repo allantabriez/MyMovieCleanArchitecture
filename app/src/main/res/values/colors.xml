@@ -4,6 +4,5 @@
     <color name="colorPrimarySecond">#4A6572</color>
     <color name="colorPrimary">#344955</color>
     <color name="colorAccent">#F9aa33</color>
-    <color name="colorSecondary">#ff6363</color>
     <color name="colorBackground">#dddddd</color>
 </resources>

@@ -18,6 +18,6 @@ class SplashScreenActivity : AppCompatActivity() {
             finish()
         }
 
-        Handler(Looper.getMainLooper()).postDelayed(runnable, 2000)
+        Handler(Looper.getMainLooper()).postDelayed(runnable, 1500)
     }
 }

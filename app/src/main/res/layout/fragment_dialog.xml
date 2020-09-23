@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorPrimaryDark"
     tools:context="com.example.madesubmission.presentation.view.DialogFragment">
 
     <TextView
@@ -44,7 +44,7 @@
             app:strokeColor="@android:color/white"
             style="?attr/materialButtonOutlinedStyle"
             android:text="@string/yes"
-            android:textColor="@color/colorSecondary"
+            android:textColor="@color/colorAccent"
             />
     </LinearLayout>
 </LinearLayout>

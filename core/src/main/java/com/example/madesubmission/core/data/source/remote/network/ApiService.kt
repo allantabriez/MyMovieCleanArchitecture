@@ -3,7 +3,6 @@ package com.example.madesubmission.core.data.source.remote.network
 import com.example.madesubmission.core.BuildConfig
 import com.example.madesubmission.core.data.source.remote.response.DetailResponse
 import com.example.madesubmission.core.data.source.remote.response.ListMoviesResponse
-import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
 

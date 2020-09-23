@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -28,11 +29,6 @@
     <style name="CardView.Big" parent="CardView">
         <item name="contentPadding">16dp</item>
         <item name="cardCornerRadius">16dp</item>
-        <item name="android:backgroundTint">@color/colorPrimary</item>
-    </style>
-
-    <style name="CardView.Big.PlaceHolder" parent="CardView">
-        <item name="contentPadding">16dp</item>
         <item name="android:backgroundTint">@color/colorPrimary</item>
     </style>
 </resources>

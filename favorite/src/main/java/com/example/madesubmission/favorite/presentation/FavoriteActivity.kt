@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.madesubmission.favorite.R
@@ -47,11 +46,7 @@ class FavoriteActivity : AppCompatActivity() {
 
         viewModel.favorites.observe(this, Observer { favorites ->
             if (favorites.isNotEmpty()) loadData(favorites)
-            else if (favorites.isEmpty()) {
-                favoriteBar.visibility = View.GONE
-                animationView.visibility = View.VISIBLE
-            }
-
+            else if (favorites.isEmpty()) showEmptyBox()
         })
     }
 
@@ -64,5 +59,11 @@ class FavoriteActivity : AppCompatActivity() {
         favoriteBar.visibility = View.GONE
         recyclerView.visibility = View.VISIBLE
         favoriteAdapter.setData(data)
+    }
+
+    private fun showEmptyBox(){
+        favoriteBar.visibility = View.GONE
+        recyclerView.visibility = View.INVISIBLE
+        animationView.visibility = View.VISIBLE
     }
 }

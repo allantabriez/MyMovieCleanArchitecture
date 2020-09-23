@@ -4,15 +4,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.madesubmission.core.data.source.local.LocalDataSource
 import com.example.madesubmission.core.data.source.local.entity.IdEntity
-import com.example.madesubmission.core.data.source.local.entity.MovieEntity
 import com.example.madesubmission.core.data.source.remote.RemoteDataSource
-import com.example.madesubmission.core.data.source.remote.response.DetailResponse
-import com.example.madesubmission.core.data.source.remote.response.MovieResponse
-import com.example.madesubmission.core.domain.model.Details
 import com.example.madesubmission.core.domain.model.Movie
 import com.example.madesubmission.core.domain.repository.IMovieRepository
 import com.example.madesubmission.core.utils.DataMapper
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 class MovieRepository(private val remoteDataSource: RemoteDataSource, private val localDataSource: LocalDataSource):

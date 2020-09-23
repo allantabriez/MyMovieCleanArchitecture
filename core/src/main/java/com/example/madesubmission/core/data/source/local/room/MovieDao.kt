@@ -1,10 +1,8 @@
 package com.example.madesubmission.core.data.source.local.room
 
-import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.example.madesubmission.core.data.source.local.entity.IdEntity
 import com.example.madesubmission.core.data.source.local.entity.MovieEntity
-import com.example.madesubmission.core.domain.model.Movie
 import kotlinx.coroutines.flow.Flow
 
 @Dao

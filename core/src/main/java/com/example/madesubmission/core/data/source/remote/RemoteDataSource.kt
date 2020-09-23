@@ -1,20 +1,13 @@
 package com.example.madesubmission.core.data.source.remote
 
 import android.util.Log
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import com.example.madesubmission.core.data.source.remote.network.ApiService
 import com.example.madesubmission.core.data.source.remote.response.DetailResponse
-import com.example.madesubmission.core.data.source.remote.response.ListMoviesResponse
 import com.example.madesubmission.core.data.source.remote.response.MovieResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import kotlin.Exception
 
 class RemoteDataSource(private val apiService: ApiService){
     fun getAllMovies(): Flow<List<MovieResponse>>{
