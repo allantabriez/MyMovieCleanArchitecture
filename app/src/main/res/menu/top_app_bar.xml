@@ -6,4 +6,9 @@
         android:icon="@drawable/logo_to_favorite"
         android:title="@string/favorite"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/changeLanguage"
+        android:title="@string/language_settings"
+        android:contentDescription="@string/language_settings"
+        app:showAsAction="never"/>
 </menu>

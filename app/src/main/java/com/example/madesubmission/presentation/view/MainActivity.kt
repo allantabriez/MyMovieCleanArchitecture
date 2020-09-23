@@ -3,6 +3,7 @@ package com.example.madesubmission.presentation.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.Settings
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
@@ -24,16 +25,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        topAppBar.setOnMenuItemClickListener { item ->
-            if (item.itemId == R.id.favorite) {
-                val favoriteIntent = Intent(
-                    this,
-                    Class.forName("com.example.madesubmission.favorite.presentation.FavoriteActivity")
-                )
-                startActivity(favoriteIntent)
-                true
-            } else false
-        }
+        setTopBar()
 
         with(recyclerView) {
             layoutManager = LinearLayoutManager(this@MainActivity)
@@ -56,5 +48,22 @@ class MainActivity : AppCompatActivity() {
         mainBar.visibility = View.GONE
         recyclerView.visibility = View.VISIBLE
         movieAdapter.setData(data)
+    }
+
+    private fun setTopBar(){
+        topAppBar.setOnMenuItemClickListener { item ->
+            if (item.itemId == R.id.favorite) {
+                val favoriteIntent = Intent(
+                    this,
+                    Class.forName("com.example.madesubmission.favorite.presentation.FavoriteActivity")
+                )
+                startActivity(favoriteIntent)
+                true
+            } else if (item.itemId == R.id.changeLanguage) {
+                val languageIntent = Intent(Settings.ACTION_LOCALE_SETTINGS)
+                startActivity(languageIntent)
+                true
+            } else false
+        }
     }
 }

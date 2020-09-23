@@ -3,7 +3,6 @@
     <string name="release_date">Release Date: %s</string>
     <string name="title">Title</string>
     <string name="overview">Overview</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="no">No</string>
     <string name="yes">Yes</string>
 </resources>

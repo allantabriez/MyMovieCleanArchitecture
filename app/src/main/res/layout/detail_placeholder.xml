@@ -121,25 +121,6 @@
                     android:textColor="@color/colorBackground"
                     android:text="@string/action_adventure_drama_comedy" />
             </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardRuntime"
-                style="@style/CardView.Small.PlaceHolder"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/cardVoteAverage"
-                android:layout_toEndOf="@id/cardReleaseDate"
-                android:backgroundTint="@color/colorBackground">
-
-                <TextView
-                    android:id="@+id/placeholderRuntime"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorBackground"
-                    android:maxLines="1"
-                    android:text="@string/_100" />
-
-            </androidx.cardview.widget.CardView>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
