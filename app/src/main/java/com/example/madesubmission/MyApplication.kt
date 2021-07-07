@@ -1,7 +1,6 @@
 package com.example.madesubmission
 
 import android.app.Application
-import android.content.Context
 import com.example.madesubmission.core.di.databaseModule
 import com.example.madesubmission.core.di.networkModule
 import com.example.madesubmission.core.di.recyclerViewModule

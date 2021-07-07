@@ -10,7 +10,7 @@ import com.example.madesubmission.core.domain.repository.IMovieRepository
 import com.example.madesubmission.core.utils.DataMapper
 import kotlinx.coroutines.flow.map
 
-class MovieRepository(private val remoteDataSource: RemoteDataSource, private val localDataSource: LocalDataSource):
+class   MovieRepository(private val remoteDataSource: RemoteDataSource, private val localDataSource: LocalDataSource):
     IMovieRepository {
 
     override fun getAllMovies() = remoteDataSource.getAllMovies().map { DataMapper.mapResponsesToDomain(it) }
